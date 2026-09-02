@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="weather-app">
+
+        <header>
+            <h1>🌤️ Weather App</h1>
+            <p>Check weather anywhere in the world</p>
+            <button id="themeBtn">
+                🌙 Dark Mode
+            </button>
+        </header>
+
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name"
+            >
+
+            <button id="searchBtn">
+                🔍 Search
+            </button>
+
+            <button id="locationBtn">
+                📍 My Location
+            </button>
+
+        </div>
+
+
+        <!-- Loading -->
+        <div id="loading">
+
+            <div class="spinner"></div>
+
+            <p>Loading weather...</p>
+
+        </div>
+
+
+        <!-- Error -->
+        <div id="errorMessage"></div>
+
+
+        <!-- Current Weather -->
+        <section class="current-weather">
+
+            <h2 id="cityName">Delhi</h2>
+
+            <div id="weatherIcon">☀️</div>
+
+            <div class="temperature">
+
+                <span id="temperature">32</span>
+
+                <span id="temperatureUnit">°C</span>
+
+            </div>
+
+            <p id="condition">Clear Sky</p>
+
+
+            <!-- Temperature Toggle -->
+            <div class="temperature-toggle">
+
+                <button id="celsiusBtn" class="active">
+                    °C
+                </button>
+
+                <button id="fahrenheitBtn">
+                    °F
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Weather Details -->
+        <section class="details">
+
+            <div class="card">
+
+                <h3>💧 Humidity</h3>
+
+                <p id="humidity">45%</p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>💨 Wind</h3>
+
+                <p id="wind">12 km/h</p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>🌡️ Feels Like</h3>
+
+                <p id="feelsLike">34°C</p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>🌧️ Rain</h3>
+
+                <p id="rain">20%</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Sunrise Sunset -->
+        <section class="sun">
+
+            <div class="card">
+
+                <h3>🌅 Sunrise</h3>
+
+                <p id="sunrise">6:00 AM</p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>🌇 Sunset</h3>
+
+                <p id="sunset">6:30 PM</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Hourly Forecast -->
+        <section>
+
+            <h2>⏰ Hourly Forecast</h2>
+
+            <div
+                id="hourlyForecast"
+                class="forecast"
+            ></div>
+
+        </section>
+
+
+        <!-- 7 Day Forecast -->
+        <section>
+
+            <h2>📅 7-Day Forecast</h2>
+
+            <div
+                id="dailyForecast"
+                class="forecast"
+            ></div>
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
