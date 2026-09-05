@@ -17,6 +17,7 @@
         <header>
             <h1>🌤️ Weather App</h1>
             <p>Check weather anywhere in the world</p>
+
             <button id="themeBtn">
                 🌙 Dark Mode
             </button>
@@ -57,128 +58,133 @@
         <div id="errorMessage"></div>
 
 
-        <!-- Current Weather -->
-        <section class="current-weather">
+        <!-- Weather Content -->
+        <div id="weatherContent" style="display: none;">
 
-            <h2 id="cityName">Delhi</h2>
+            <!-- Current Weather -->
+            <section class="current-weather">
 
-            <div id="weatherIcon">☀️</div>
+                <h2 id="cityName"></h2>
 
-            <div class="temperature">
+                <div id="weatherIcon"></div>
 
-                <span id="temperature">32</span>
+                <div class="temperature">
 
-                <span id="temperatureUnit">°C</span>
+                    <span id="temperature"></span>
 
-            </div>
+                    <span id="temperatureUnit">°C</span>
 
-            <p id="condition">Clear Sky</p>
+                </div>
 
-
-            <!-- Temperature Toggle -->
-            <div class="temperature-toggle">
-
-                <button id="celsiusBtn" class="active">
-                    °C
-                </button>
-
-                <button id="fahrenheitBtn">
-                    °F
-                </button>
-
-            </div>
-
-        </section>
+                <p id="condition"></p>
 
 
-        <!-- Weather Details -->
-        <section class="details">
+                <!-- Temperature Toggle -->
+                <div class="temperature-toggle">
 
-            <div class="card">
+                    <button id="celsiusBtn" class="active">
+                        °C
+                    </button>
 
-                <h3>💧 Humidity</h3>
+                    <button id="fahrenheitBtn">
+                        °F
+                    </button>
 
-                <p id="humidity">45%</p>
+                </div>
 
-            </div>
-
-
-            <div class="card">
-
-                <h3>💨 Wind</h3>
-
-                <p id="wind">12 km/h</p>
-
-            </div>
+            </section>
 
 
-            <div class="card">
+            <!-- Weather Details -->
+            <section class="details">
 
-                <h3>🌡️ Feels Like</h3>
+                <div class="card">
 
-                <p id="feelsLike">34°C</p>
+                    <h3>💧 Humidity</h3>
 
-            </div>
+                    <p id="humidity"></p>
 
-
-            <div class="card">
-
-                <h3>🌧️ Rain</h3>
-
-                <p id="rain">20%</p>
-
-            </div>
-
-        </section>
+                </div>
 
 
-        <!-- Sunrise Sunset -->
-        <section class="sun">
+                <div class="card">
 
-            <div class="card">
+                    <h3>💨 Wind</h3>
 
-                <h3>🌅 Sunrise</h3>
+                    <p id="wind"></p>
 
-                <p id="sunrise">6:00 AM</p>
-
-            </div>
+                </div>
 
 
-            <div class="card">
+                <div class="card">
 
-                <h3>🌇 Sunset</h3>
+                    <h3>🌡️ Feels Like</h3>
 
-                <p id="sunset">6:30 PM</p>
+                    <p id="feelsLike"></p>
 
-            </div>
-
-        </section>
+                </div>
 
 
-        <!-- Hourly Forecast -->
-        <section>
+                <div class="card">
 
-            <h2>⏰ Hourly Forecast</h2>
+                    <h3>🌧️ Rain</h3>
 
-            <div
-                id="hourlyForecast"
-                class="forecast"
-            ></div>
+                    <p id="rain"></p>
 
-        </section>
+                </div>
+
+            </section>
 
 
-        <!-- 7 Day Forecast -->
-        <section>
+            <!-- Sunrise Sunset -->
+            <section class="sun">
 
-            <h2>📅 7-Day Forecast</h2>
+                <div class="card">
 
-            <div
-                id="dailyForecast"
-                class="forecast"
-            ></div>
+                    <h3>🌅 Sunrise</h3>
 
-        </section>
+                    <p id="sunrise"></p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>🌇 Sunset</h3>
+
+                    <p id="sunset"></p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Hourly Forecast -->
+            <section>
+
+                <h2>⏰ Hourly Forecast</h2>
+
+                <div
+                    id="hourlyForecast"
+                    class="forecast"
+                ></div>
+
+            </section>
+
+
+            <!-- 7 Day Forecast -->
+            <section>
+
+                <h2>📅 7-Day Forecast</h2>
+
+                <div
+                    id="dailyForecast"
+                    class="forecast"
+                ></div>
+
+            </section>
+
+        </div>
 
     </div>
 
