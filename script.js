@@ -55,6 +55,8 @@ const hourlyForecast =
 
 const dailyForecast =
     document.getElementById("dailyForecast");
+const weatherContent =
+    document.getElementById("weatherContent");
 
 const celsiusBtn =
     document.getElementById("celsiusBtn");
@@ -209,6 +211,7 @@ async function getWeatherData(
 
         const data =
             await response.json();
+        weatherContent.style.display = "block";
 
         weatherData = data;
 
